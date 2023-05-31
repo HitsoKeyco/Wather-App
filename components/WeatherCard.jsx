@@ -33,7 +33,7 @@ const handleChangeTemp = () => {
             </section>
 
             <section className='name'>
-                <h2>{weather?.name}, {weather?.sys.country}</h2>
+                <h2 className='nameh3'>{weather?.name}, {weather?.sys.country}</h2>
             </section>
             <section className='search'>
                 <input type="text" />
