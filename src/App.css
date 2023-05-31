@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('lluvia.jpg');
+    background-image: url('public/lluvia.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
@@ -175,7 +175,7 @@ button, input{
     .App{
         grid-template-columns: 50% 50%;   
     }
-    
+
     .img_300px{
         display: none;
     }
