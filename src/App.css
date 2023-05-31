@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('public/lluvia.jpg');
+    background-image: url('assets/lluvia.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover; 
