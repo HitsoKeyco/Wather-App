@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState } from 'react'
-import { Button, Form, FormControl} from 'react-bootstrap';
+import { Button, Form, FormControl } from 'react-bootstrap';
 
 const WeatherCard = ({ weather, temp, handleSubmit }) => {
 
@@ -45,7 +45,7 @@ const WeatherCard = ({ weather, temp, handleSubmit }) => {
             </section>
 
             <Form action="formSearch" onSubmit={handleSubmit}>
-                <FormControl type="text" id="inputValue" placeholder="...algun lugar?" />                
+                <FormControl type="text" id="inputValue" placeholder="...algun lugar?" />
                 <Button className='button_search' type="submit">Search</Button>
             </Form>
 
