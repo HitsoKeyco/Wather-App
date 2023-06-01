@@ -4,10 +4,10 @@ const Loading = () => {
 
     return (
         <div id="contenedor">
-            <div class="contenedor-loader">
-                <div class="loader"></div>
+            <div className="contenedor-loader">
+                <div className="loader"></div>
             </div>
-            <div class="cargando">Cargando...</div>
+            <div className="cargando">Cargando...</div>
         </div>
     )
 

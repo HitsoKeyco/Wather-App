@@ -13,7 +13,7 @@ function App() {
   const [weather, setWeather] = useState()
   const [temp, setTemp] = useState()
   const [search, setSearch] = useState()
-
+  
   useEffect(() => {
     const success = pos => {
       const obj = {
@@ -38,7 +38,7 @@ function App() {
             }
             setTemp(objTemp)
           })
-          .catch(err => console.log(err));
+          .catch(err => alert('lo sentimos, busqueda no encontrada'));
       }, [search])
       :
       useEffect(() => {
@@ -47,6 +47,7 @@ function App() {
           axios.get(url)
             .then(res => {
               setWeather(res.data)
+              console.log(res.data);
               const objTemp = {
                 celsius: +(res.data.main.temp - 273.15).toFixed(0),
                 farenheit: +((res.data.main.temp - 273.15) * 9 / 5 + 32).toFixed(0)
