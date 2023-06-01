@@ -359,6 +359,7 @@ form {
         font-size: 2vw;
         justify-content: end;
         align-items: start;
+        box-shadow: none;
         
     }
     .nameh3{
