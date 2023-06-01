@@ -1,5 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState } from 'react'
-
+import { Button, Form, FormControl} from 'react-bootstrap';
 
 const WeatherCard = ({ weather, temp, handleSubmit }) => {
 
@@ -34,7 +35,7 @@ const WeatherCard = ({ weather, temp, handleSubmit }) => {
                     </ul>
                     <div className="info_temp">
                         <h4 className='temp_show'>{iscelcius ? `${temp?.celsius} °C` : `${temp?.farenheit} °F`}</h4>
-                        <button className='button_change_temp' onClick={handleChangeTemp}>'Change to'{iscelcius ? '°F' : '°C'}</button>
+                        <button className='button_change_temp' onClick={handleChangeTemp}>Change to {iscelcius ? '°F' : '°C'}</button>
                     </div>
                 </div>
             </section>
@@ -43,10 +44,10 @@ const WeatherCard = ({ weather, temp, handleSubmit }) => {
                 <h2 className='nameh3'>{weather?.name}, {weather?.sys.country}</h2>
             </section>
 
-            <form action="formSearch" onSubmit={handleSubmit}>
-                <input type="text" id="inputValue" placeholder="    ...algun lugar?" />
-                <button className='button_search' type="submit">Search</button>
-            </form>
+            <Form action="formSearch" onSubmit={handleSubmit}>
+                <FormControl type="text" id="inputValue" placeholder="...algun lugar?" />                
+                <Button className='button_search' type="submit">Search</Button>
+            </Form>
 
             <section className='img_700px'>
                 <img src={weather && `https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="img" />
