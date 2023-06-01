@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import getApiKey from './utils/getApiKey';
 import axios from 'axios'
-import WeatherCard from '../components/WeatherCard';
-import Loading from '../components/Loading';
+import WeatherCard from './components/WeatherCard';
+import Loading from './components/Loading';
 
 
 function App() {
